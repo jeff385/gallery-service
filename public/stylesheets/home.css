@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background: #f7f7f7;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 60px;
+}
+
+.header .header-title h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 40px;
+    color: #3d3c3c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-upload {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.img-upload h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    color: #3d3c3c;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.img-wrapper img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 10px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133, 0.22);
+}

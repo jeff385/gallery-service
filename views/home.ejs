@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/home.css' />
+    <link rel="stylesheet" href='/stylesheets/reset.css' />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-title">
+                <h1>
+                    <%= user.nick %>'s page
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-upload">
+                <form action="/post" method="POST" enctype="multipart/form-data">
+                    <h1>Upload Your Image!</h1>
+                    <input id="img" type="file" accept="image/*">
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+            <script>
+                if (document.getElementById('img')) {
+                    document.getElementById('img').addEventListener('change', function (e) {
+                        var formData = new FormData();
+                        console.log(this, this.files);
+                        formData.append('img', this.files[0]);
+                        var xhr = new XMLHttpRequest();
+                        xhr.onload = function () {
+                            if (xhr.status === 200) {
+                                var url = JSON.parse(xhr.responseText).url;
+                            } else {
+                                console.error(xhr.responseText);
+                            }
+                        };
+                        xhr.open('POST', '/post/img');
+                        xhr.send(formData);
+                    });
+                }
+            </script>
+            <div class="img-wrapper">
+                <% for(var i=0 ; i<img.length ; i++) { %>
+                    <img src="<%= img.img %>">
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

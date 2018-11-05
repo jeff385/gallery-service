@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background: #f7f7f7;
+    justify-content: center;
+}
+
+.container {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.box-shadow {
+    box-shadow: 0 6px 12px 0 rgba(21, 19, 19, .1);
+}
+
+/* USER */
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.home-title h1 {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.home-btn {
+    padding: 20px 80px;
+    background: #999;
+}
+
+/* NO USER */
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-title {
+    font-family: 'Concert One', cursive;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form>input {
+    width: 30vw;
+    margin-bottom: 10px;
+    border-style: none;
+    outline: none;
+    border-bottom: 3px solid #999;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-form>div {
+    margin-bottom: 10px;
+}
+
+.login-form>div>label {
+    font-family: 'Concert One', cursive;
+}
+
+.login-form>button {
+    font-family: 'Concert One', cursive;    
+    background: #f7f7f7;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    padding: 5px 0;
+    cursor: pointer;
+    box-shadow: 0 6px 12px 0 rgba(21, 19, 19, .1);
+    transition: .2s;
+    margin-bottom: 10px;
+}
+
+.login-form>button:hover {
+    background:#f9f9f9;
+    box-shadow: 0 16px 36px 0 rgba(21,19,19,.15);
+    transform: scale(1.01);
+}
+
+.login-form a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.login-form a:hover {
+    color: #7b7b7b;
+}
+
+

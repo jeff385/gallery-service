@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel="stylesheet" href='/stylesheets/reset.css' />
+</head>
+
+<body>
+    <div class="container">
+        <div class="content box-shadow">
+            <div class="login">
+                <div class="box-title">
+                    Login
+                </div>
+                <form action="/auth/login" method="POST" class="login-form">
+                    <input type="email" placeholder="email" name="email" required autofocus>
+                    <input type="password" placeholder="password" name="password" required>
+                    <button type="submit">Login</button>
+                    <a href="/join">Register</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

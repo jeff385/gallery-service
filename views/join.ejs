@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/join.css' />
+    <link rel="stylesheet" href='/stylesheets/reset.css' />
+</head>
+
+<body>
+    <div class="container">
+        <div class="content box-shadow">
+            <div class="enroll">
+                <div class="box-title">
+                    Join
+                </div>
+                <form action="/auth/join" method="POST" class="enroll-form">
+                    <input type="email" placeholder="email" name="email" required autofocus>
+                    <input type="text" placeholder="nick" name="nick" required>
+                    <input type="text" placeholder="password" name="password" required>
+                    <button type="submit">Resgister</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
